@@ -1,2 +1,3 @@
-# brc20Nft
-brc20Nft
+# brc-front
+# node v16.10.0
+# yarn install

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_attention1</title>
+    <g id="行情" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分享弹窗-改" transform="translate(-1603.000000, -78.000000)">
+            <g id="编组-64备份-2" transform="translate(1583.000000, 50.000000)">
+                <g id="icon_attention1" transform="translate(20.000000, 28.000000)">
+                    <path d="M8,16 C10.20912,16 12.20912,15.10456 13.65684,13.65684 C15.10456,12.20912 16,10.20912 16,8 C16,5.79088 15.10456,3.79088 13.65684,2.343144 C12.20912,0.895432 10.20912,0 8,0 C5.79088,0 3.79088,0.895432 2.343144,2.343144 C0.895432,3.79088 0,5.79088 0,8 C0,10.20912 0.895432,12.20912 2.343144,13.65684 C3.79088,15.10456 5.79088,16 8,16 Z" id="路径" fill="#FFC904" fill-rule="nonzero"></path>
+                    <path d="M8,13.2 C8.55228,13.2 9,12.75228 9,12.2 C9,11.64772 8.55228,11.2 8,11.2 C7.44772,11.2 7,11.64772 7,12.2 C7,12.75228 7.44772,13.2 8,13.2 Z" id="路径" fill="#1A1A1A"></path>
+                    <line x1="8" y1="3.2" x2="8" y2="9.6" id="路径" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

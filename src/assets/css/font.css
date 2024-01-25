@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'OTF-Pixer-Regular-otf';
+    src: url('./front/OTF/Pixer-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TTF-Pixer-Regular-ttf';
+    src: url('./front/TTF/Pixer-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Pixer-Regular-eot';
+    src: url('./front/WEB/Pixer-Regular.eot') format('opentype');
+}
+
+@font-face {
+    font-family: 'Pixer-Regular-woff';
+    src: url('./front/WEB/Pixer-Regular.woff') format('opentype');
+}
+
+@font-face {
+    font-family: 'Pixer-Regular-woff2';
+    src: url('./front/WEB/Pixer-Regular.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Medium';
+    src: url('./front/IBM-Plex-Mono/IBMPlexMono-Medium.otf') format('opentype');
+}
+
+/*@font-face {*/
+/*    font-family: 'IBMPlexMono-Medium';*/
+/*    src: url('./front/IBM-Plex-Mono/IBMPlexMono-Medium.otf') format('opentype');*/
+/*}*/
+@font-face {
+    font-family: 'IBMPlexMono-Bold';
+    src: url('./front/IBM-Plex-Mono/IBMPlexMono-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Italic';
+    src: url('./front/IBM-Plex-Mono/IBMPlexMono-Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'DarkStar-Bold';
+    src: url('./front/DarkStar-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Pixeloid Sans';
+    src: url('./front/PixeloidSans.ttf');
+}
+
+@font-face {
+    font-family: 'DarkStar-Bold';
+    src: url('./front/darkstar.ttf');
+}

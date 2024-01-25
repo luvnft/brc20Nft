@@ -1,0 +1,252 @@
+{
+  "ErrorCode": {
+    "1001": "이 Twitter 계정은 다른 주소({address})에 연결되어 있습니다.",
+    "50004": "잘못된 요청 매개변수:{트위터 저장 토큰 만료 오류}"
+  },
+  "ConnectionFailed": "Connection failed",
+  "Airdrop": "Airdrop",
+  "Leaderboard": "Leaderboard",
+  "Bridge": "Bridge",
+  "Connect": "Connect",
+  "POWERING": "POWERING",
+  "THEBRC20CONOMY": "THE BRC-20 CONOMY",
+  "TOKENLAUNCHED": "TOKEN LAUNCHED",
+  "OWNICONICINTERNET": "OWN ICONIC INTERNET",
+  "CULTUREONCHAIN": "CULTURE, ON CHAIN",
+  "OWNICONICINTERNETCULTURE": "OWN ICONIC INTERNET CULTURE",
+  "ONCHAIN": "ON CHAIN",
+  "Season1": "Season 1. Drop Highlights",
+  "Points": "points",
+  "PURPLETop": "PURPLE - Top 10% (1.3x ID0)",
+  "DiscoverThe": "Discover the Potion to get a multiplier during the IDO!",
+  "LearnMore": "Learn More",
+  "CompleteSlgn": "Complete slgn up Tasks",
+  "Refcode": "Refcode Connect wallet join Twitter Telegram and verify",
+  "TwitterAuthentication": "Connect your Twitter",
+  "ConnectTwitter": "Connect Twitter and earn +{number}",
+  "VerifyEmail": "Verify Email",
+  "VerifyTelegram": "Join Telegram",
+  "JoinTelegram": "Join Telegram And Earn +{number}",
+  "NakagaZealy": "Nakaga Questboard",
+  "Follow": "Follow",
+  "Verify": "Verify",
+  "JoinNakaga": "Follow Nakaga",
+  "OncomingTasks": "Oncoming Tasks",
+  "Multipulier": "{number}x Multipulier",
+  "InviteYour": "Invite your friend and both of you get extra {number} Points when they sign up!",
+  "InviteLink": "Invite Link",
+  "InviteCode": "Invite Code",
+  "CopyLink": "Copy Link",
+  "CopyCode": "Copy Code",
+  "TotalInvites": "Total invites",
+  "GetJUlCE": "Get JUlCE for each invited friendl Updatesdaily",
+  "Invited": "{number} Invited",
+  "ZealyQuests": "Quests",
+  "Complete": "Complete tasks on Nakaga to ear more JUlCE, Updates daily.",
+  "MEE6": "MEE6 XP (Discord)",
+  "Engage": "Engage on Discord to eam more JUlCE. Updates daily",
+  "NameChange": "Name Change (Discord)",
+  "ChangeYour": "Change your name on Discord and earn every day eg Ralph I melon.ooo Airdrop",
+  "PerDaily": "Per-daily {number}",
+  "GetJUlCEFor": "Get JUlCE for each invited friendl Updatesdaily",
+  "Deposit": "Deposit",
+  "Withdraw": "Withdraw",
+  "Success": "Success",
+  "Balance": "Balance",
+  "Submit": "Submit",
+  "Bridged": "Bridged",
+  "EarningYield": "Earning Yield + Spins for Points",
+  "BridgeMore": "Bridge more",
+  "Invites": "Invites",
+  "SquadGoal": "Squad goal",
+  "SquadReward": "{number} of {numberBTC} BTC for Squad Reward",
+  "InviteAvailable": "Invite Available",
+  "Blastio": "blastio/7EXV7",
+  "CopyInvite": "Copy invite",
+  "Eaming": "Eaming <span class='color'>{number} spins</span> per week <br>Next spin <span class='color'>{date}</span>",
+  "NextSpin": "Next spin 5D : 14H : 45M : 35",
+  "Spins": "Spins",
+  "SpinNow": "Spin Now",
+  "Rank": "Rank",
+  "BridgeInvite": "Bridge & invite to Rank Up",
+  "Copyright": "Copyright © 2023 Powered by Nakaga. All rights reserved",
+  "public": {
+    "notMore": "No More",
+    "noResult": "No Result",
+    "search": "Search",
+    "scrollTop": "Back to the top",
+    "editSuccess": "Successfully modified",
+    "editError": "Fail to edit",
+    "more": "More",
+    "notItem": "There is no item",
+    "loadMore": "Load more",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "notOnList": "Not on list",
+    "sendCode": "Send code",
+    "results": "results",
+    "hAgo": "{count} h ago",
+    "minAgo": "{count} min ago",
+    "secsAgo": "{count} secs ago",
+    "emailVerificationSuccessful": "Email verification successful",
+    "againLater": "Email verification failed, please try again later"
+  },
+  "change-wallet": {
+    "description": "Change network to the correct",
+    "submit": "Change network",
+    "title": "Wrong network"
+  },
+  "common": {
+    "copied": "Copied!",
+    "copy-to-clipboard": "Copy to clipboard",
+    "restore": "Restore",
+    "apply": "Apply",
+    "close": "Close",
+    "reset": "Reset"
+  },
+  "connect-wallet": {
+    "placeholder": {
+      "collection-title": "To view collection items, you need to connect your wallet first",
+      "description": "The contents of this page are only viewable with a connected wallet",
+      "title": "Connect your wallet"
+    }
+  },
+  "cropper": {
+    "flip-h": "Flip horizontal",
+    "flip-v": "Flip vertical",
+    "rotate-left": "Rotate left",
+    "rotate-right": "Rotate right"
+  },
+  "details-nft": {
+    "info": {
+      "date": "{value, date, medium}",
+      "time": "at {value, time, short}",
+      "view-scan": "View on {name}"
+    }
+  },
+  "empty-data": {
+    "text": "Switch to the correct network to view the contents of this page.",
+    "title": "Whoops! Looks like there's no data."
+  },
+  "error": {
+    "data-is-not-available": "Data is not available",
+    "greater-than": "It must be greater than {value}",
+    "less-than": "It must be less than {value}",
+    "unexpected": "Server exception",
+    "contract-rejected": "Contract operation is rejected"
+  },
+  "form": {
+    "limit-counter": "{value}/{maxLimit}"
+  },
+  "go-back": {
+    "action": "Go back"
+  },
+  "headers": {
+    "connect": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "how-it-works": "How it works",
+    "inventory": "My Profile",
+    "market": "market",
+    "my-collections": "My Collections",
+    "profile-settings": "Profile Settings",
+    "select-chain": {
+      "bnb": "Binance Smart Chain",
+      "eth": "Ethereum Mainnet",
+      "heco": "HECO Chain",
+      "heco-2": "Huobi Wallet",
+      "polygon": "Polygon Mainnet",
+      "ankr": "Ankr Chain",
+      "title": "Select network"
+    },
+    "network": {
+      "etherreum": "Ethereum",
+      "binance": "Binance Smart Chain",
+      "rinkby": "Rinkeby Test Chain",
+      "heco": "Heco Chain",
+      "polygon": "Matic Chain",
+      "solana": "Solana Chain",
+      "ape": "APE Chain",
+      "edge": "Edge Testnet",
+      "ankr-test": "Coq Testnet",
+      "binance-test": "BSC Testnet",
+      "polygon-test": "Polygon Testnet",
+      "bas-mainnet": "APE Chain",
+      "bas": "APE Testnet",
+      "goerli": "Goerli Testnet",
+      "unknow": "Unknown network"
+    },
+    "profile": "Profile",
+    "favorite": "Favorite",
+    "setting": "Setting",
+    "totalBalance": "Total balance",
+    "wallet": "Wallet"
+  },
+  "language": {
+    "en-US": "En",
+    "zh-CN": "Zh",
+    "ja-JP": "Ja",
+    "ko-KO": "Ko"
+  },
+  "social": {
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "website": "Website",
+    "discord": "Discord",
+    "title-for-socials": "{title} — {description}",
+    "twitter": "Twitter",
+    "block": "Block"
+  },
+  "time": {
+    "days-short": "{days}d",
+    "hours-short": "{hours}h",
+    "minutes-short": "{minutes}m",
+    "seconds-short": "{seconds}s",
+    "time-left-short": "{days} {hours} {minutes} {seconds} left",
+    "time-end": "Ended on {days}/{months}/{years}"
+  },
+  "upload-file-field": {
+    "file-data": "{fileName} {fileSize}MB",
+    "file-uploaded": "File uploaded"
+  },
+  "video-player": {
+    "unsupported": "Sorry, your browser does not support embedded videos or uploaded video file types!"
+  },
+  "not-support-chain": {
+    "title": "Not support this chain"
+  },
+  "errorMessage": {
+    "theEmailHas": "The email has been sent, please check your mailbox",
+    "codeCannot": "Code cannot be sent before expiration"
+  },
+  "message": {
+    "buySuccess": "{address} 购买交易成功",
+    "loginSuccess": "登录成功"
+  },
+  "placeholder": {
+    "ContractToken": "输入合约/代币名称",
+    "emailVerificationCode": "邮箱验证码",
+    "googleVerificationCode": "谷歌验证码",
+    "placeEmail": "请输入邮箱",
+    "placePwd": "请输入密码",
+    "placeEmailChecked": "请输入正确的邮箱格式",
+    "code": "验证码",
+    "invitationCode": "邀请码（选填）"
+  },
+  "button": {
+    "login": "登录",
+    "register": "注册",
+    "bind": "绑定",
+    "edit": "修改",
+    "exportPrivateKey": "导出私钥",
+    "next": "下一步",
+    "copy": "复制",
+    "delete": "删除",
+    "add": "新增",
+    "cancelTracking": "取消跟踪",
+    "trackingNotification": "跟踪通知",
+    "reset": "重置",
+    "sell": "卖出",
+    "resubmit": "重新提交"
+  }
+}

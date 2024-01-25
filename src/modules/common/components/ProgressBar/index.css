@@ -1,0 +1,14 @@
+/* NProgress.css */
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: #CAC8FF; /* 将颜色修改为你想要的颜色 */
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* 进度条的高度 */
+}

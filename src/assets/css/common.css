@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    /*background-color: #ffffff;*/
+    /*color: #000000;*/
+    /*overflow-x: hidden;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
