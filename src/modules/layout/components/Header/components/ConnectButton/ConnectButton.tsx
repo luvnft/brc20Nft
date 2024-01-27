@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import { t } from 'modules/i18n/utils/intl';
 import { Box } from '@material-ui/core';
 import classNames from 'classnames';
@@ -9,13 +9,14 @@ import { styles } from './ConnectButtonStyles';
 import { truncateWalletAddr } from 'modules/common/utils/truncateWalletAddr';
 import { Button } from 'modules/uiKit/Button';
 import { SIGN } from 'assets/js/const';
-
+import {DialogWarp} from '../DialogWarp';
 import { useBtc } from 'modules/web3/wallet';
 // import { useDispatchRequest } from '@redux-requests/react';
 
 const ConnectButtonPage = (
   { classes = {} }: { classes: any },
 ) => {
+  let [visibility, setVisibility] = useState<boolean>(false);
   const controlRef = useRef<HTMLButtonElement>(null);
   const { connect, address, signMessage, disconnect } = useBtc();
   const {
@@ -25,15 +26,18 @@ const ConnectButtonPage = (
   } = useWalletDropdown();
   const connectClick = () => {
     if (address) return false;
-    connect('Unisat').then((res: any) => {
-      signMessage(SIGN, 'Unisat').then(sign => {
-
-      });
-    });
+    setVisibility(true)
+    // connect('Unisat').then((res: any) => {
+    //   signMessage(SIGN, 'Unisat').then(sign => {
+    //
+    //   });
+    // });
   };
   const openClick = () => {
     if (address) {
       handleOpen();
+    }else {
+
     }
 
   };
@@ -79,6 +83,45 @@ const ConnectButtonPage = (
             </div>
           </div>
         </FocusOn>
+
+
+
+        <DialogWarp
+          visibility={visibility}
+          setVisibility={setVisibility}
+          title={t('ConnectionFailed')}
+        >
+          <Box className={classes.dialogBody}>
+            <Box className={classes.diaTop}>
+
+
+            </Box>
+            <Box className={classes.footer}>
+              <Button
+                type='button'
+                onClick={() => {
+                  setVisibility(false);
+                }}
+                className={classNames(classes.backButtonOrder, 'back')}
+                loading={false}>
+                Back
+              </Button>
+              <Button
+                onClick={() => {
+                  setVisibility(false);
+                  window.close();
+                }}
+                type='button'
+                className={classNames(classes.buyButtonOrder, 'buyButtonOrder')}
+              >
+                Confirm
+              </Button>
+            </Box>
+
+
+          </Box>
+        </DialogWarp>
+
 
 
       </Box>
