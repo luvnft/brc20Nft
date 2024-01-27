@@ -94,6 +94,8 @@ const ConnectButtonPage = (
           <Box className={classes.dialogBody}>
             <Box className={classes.diaTop}>
 
+              
+
 
             </Box>
             <Box className={classes.footer}>
