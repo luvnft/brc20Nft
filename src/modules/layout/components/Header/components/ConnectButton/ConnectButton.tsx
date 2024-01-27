@@ -12,6 +12,7 @@ import { SIGN } from 'assets/js/const';
 import {DialogWarp} from '../DialogWarp';
 import { useBtc } from 'modules/web3/wallet';
 // import { useDispatchRequest } from '@redux-requests/react';
+import {BtcConnectorName} from 'modules/web3/wallet';
 
 const ConnectButtonPage = (
   { classes = {} }: { classes: any },
@@ -27,12 +28,15 @@ const ConnectButtonPage = (
   const connectClick = () => {
     if (address) return false;
     setVisibility(true)
-    // connect('Unisat').then((res: any) => {
-    //   signMessage(SIGN, 'Unisat').then(sign => {
-    //
-    //   });
-    // });
+
   };
+  const connectWalletClick=(type:BtcConnectorName)=>{
+    connect(type).then((res: any) => {
+      signMessage(SIGN, 'Unisat').then(sign => {
+
+      });
+    });
+  }
   const openClick = () => {
     if (address) {
       handleOpen();
@@ -94,7 +98,20 @@ const ConnectButtonPage = (
           <Box className={classes.dialogBody}>
             <Box className={classes.diaTop}>
 
-
+              <Button
+                type='button'
+                onClick={()=>connectWalletClick('OKX')}
+                className={classNames(classes.backButtonOrder, 'back')}
+                loading={false}>
+                OKX
+              </Button>
+              <Button
+                type='button'
+                onClick={()=>connectWalletClick('Unisat')}
+                className={classNames(classes.backButtonOrder, 'back')}
+                loading={false}>
+               UNISAT
+              </Button>
 
 
             </Box>
