@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Box } from '@material-ui/core';
 import { useHeaderStyles } from './HeaderStyles';
 import classNames from 'classnames';
@@ -7,6 +7,7 @@ import { Button } from '../../../uiKit/Button';
 import { NavLink } from 'react-router-dom';
 import { useIsMDDown } from '../../../themes/useTheme';
 import { HeaderNavationDrawer } from './components/HeaderNavationDrawer';
+import {ConnectButton} from './components/ConnectButton';
 
 export const routers = [
   {
@@ -57,6 +58,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
       </Box>
 
       <Box className={classNames(classes.right)}>
+        <ConnectButton />
         {
           !mobile && <Box
             className={classNames(classes.button, 'app')}

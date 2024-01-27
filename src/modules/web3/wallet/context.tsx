@@ -74,6 +74,7 @@ export const btcContext = createSlice({
     },
   },
 });
+
 type BtcProviderProps = { children: React.ReactNode }
 
 export const BtcContext = createContext<{ state: State; dispatch: Dispatch } | undefined>(undefined);

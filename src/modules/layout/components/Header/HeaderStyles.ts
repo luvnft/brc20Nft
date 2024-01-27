@@ -39,7 +39,11 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     alignItems: 'center',
     padding: '0 0.8rem',
     position: 'relative',
+    '&.css':{
+
+    },
     [theme.breakpoints.down('sm')]: {
+      // max-width=750
       display: 'none',
     },
   },
