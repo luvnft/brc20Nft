@@ -17,9 +17,9 @@ export const StepFour = () => {
           <img src={ stepFourStar } alt="stepFourStar"/>
         </Box>
         <Box className={classNames('stepFour-wrap-cardList')}>
-          <StepFourCard img={StepFourImage1} desc="Scroll's powerful zkEVM means that projects on X Terminals offer high-throughput and low slippage - perfect for DeFi."/>
-          <StepFourCard img={StepFourImage2} desc="As a fair launch platform, X Terminals is perfect for community-focused projects and offers unique tools like KOL networks, Business Development support, and cutting-edge technical capabilities."/>
-          <StepFourCard img={StepFourImage3} desc="Zk means that X Terminals also offers projects privacy and compliance at the same time. This prepares DeFi for real-world use, giving them the ability to obey laws in local jurisdictions.Shape the future, not just a market cycle."/>
+          <StepFourCard img={StepFourImage3} desc="Scroll's powerful zkEVM means that projects on X Terminals offer high-throughput and low slippage - perfect for DeFi."/>
+          <StepFourCard img={StepFourImage1} desc="As a fair launch platform, X Terminals is perfect for community-focused projects and offers unique tools like KOL networks, Business Development support, and cutting-edge technical capabilities."/>
+          <StepFourCard img={StepFourImage2} desc="Zk means that X Terminals also offers projects privacy and compliance at the same time. This prepares DeFi for real-world use, giving them the ability to obey laws in local jurisdictions.Shape the future, not just a market cycle."/>
         </Box>
       </Box>
     </Box>

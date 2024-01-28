@@ -28,7 +28,7 @@ export const Applink = () => {
         {
           routers.map(d => {
             return (
-              <img src={d.img} alt={d.title} className={'img'} onClick={() => {
+              <img key={ d.title } src={d.img} alt={d.title} className={'img'} onClick={() => {
                 window.open(d.link)
               }}/>
             );

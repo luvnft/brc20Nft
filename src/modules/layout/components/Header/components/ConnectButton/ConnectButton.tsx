@@ -81,7 +81,7 @@ const ConnectButtonPage = (
               }}
                    className={classNames(classes.language)}
               >
-                断开链接
+                Disconnect
               </Box>
 
             </div>

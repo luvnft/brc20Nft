@@ -12,16 +12,6 @@ const cardBackgroundTheme = ({ from, to, x, y}: cardBackgroundThemeparams) => {
     borderRadius: '4rem',
  }
 }
-const stepOnecardStyle = {
-  padding: '4rem',
-  borderRadius: '4rem',
-  border: '1px rgba(255, 255, 255, 0.10) solid',
-  flexDirection: 'column',
-  justifyContent: 'flex-start',
-  alignItems: 'flex-start',
-  gap: '2rem',
-  display: 'inline-flex',
-}
 export const useHomeStyle = makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
@@ -68,9 +58,24 @@ export const useHomeStyle = makeStyles((theme: Theme) => ({
       }
     },
     '& .top-app': {
+      padding: '0 4rem 0 0.8rem',
+      display: 'inline-flex',
+      gap: '3rem',
+      background: '#994AFF',
+      borderRadius: '4rem',
+      marginTop: '8rem',
+      height: '6.4rem',
+      alignItems: 'center',
       '& img': {
-        height: '6.4rem',
-        marginTop: '8rem',
+        height: '4.8rem',
+       
+      },
+      '& p': {
+        color: 'white',
+        fontSize: '2.4rem',
+        fontFamily: 'Gravity',
+        fontWeight: '700',
+        wordWrap: 'break-word',
       }
     },
   },

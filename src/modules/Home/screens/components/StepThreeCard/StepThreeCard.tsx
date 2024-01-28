@@ -10,7 +10,7 @@ export const StepThreeCard = (props: stepThreeCardProps) => {
         <img src={ props.icon } alt="icon" />
       </Box>
       <Box className={classNames('desc')}>
-        <p>{ props.children }</p>
+        { props.children }
       </Box>
       <Box className={classNames('indexText')}>
         <p>{ props.indexText }</p>

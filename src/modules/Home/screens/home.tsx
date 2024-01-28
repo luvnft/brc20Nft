@@ -9,7 +9,7 @@ import { StepTwo } from './components/StepTwo'
 import { StepThree } from './components/StepThree'
 import { StepFour } from './components/StepFour'
 import bgBig from 'assets/img/home/bg-big.png'
-import lauch from 'assets/img/home/lauch.png'
+import lauch from 'assets/img/home/lauch-icon.png'
 import earth from 'assets/img/home/earth.png'
 import code from 'assets/img/home/code.png'
 import xter from 'assets/img/home/x-ter.png'
@@ -29,12 +29,13 @@ export const Home = () => {
           <Box  className={classNames('top-title')}>
             <p className={classNames('top-title-h2')}>Introducing</p>
             <p className={classNames('top-title-h3')}>X Terminals</p>
-            <p className={classNames('top-title-h4')}>A Fairlaunch Platform on Scroll</p>
+            <p className={classNames('top-title-h4')}>Scroll's Official Fair-Launch Platform</p>
           </Box>
           <Box
             className={classNames('top-app')}
           >
-           <img src={lauch} alt="" />
+            <img src={lauch} alt="" />
+            <p>Launch X Terminals</p>
           </Box>
         </Box>
         {/* 中间部分 */}
@@ -49,7 +50,7 @@ export const Home = () => {
             <Box className={classNames('center-left-code')}>
               <img src={code} alt="code" />
               <div className={classNames('center-left-code-p')}>
-                Code is simply a way to write the reality that you want. Software and programming allow us to rewire how our world works. 
+                Scroll is the paper, we provide the pen. Use X Terminals to create code that will rewire how our world works
               </div>
             </Box>
           </Box>

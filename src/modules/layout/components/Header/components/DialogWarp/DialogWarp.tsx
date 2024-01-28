@@ -2,7 +2,7 @@ import React from "react";
 import {useDialogWarp} from './useDialogWarp';
 import {Box, Dialog} from '@material-ui/core';
 import classNames from 'classnames';
-import ClosePng from 'assets/img/public/dialogClose.png';
+// import ClosePng from 'assets/img/public/dialogClose.png';
 
 interface DialogWarpProps {
   visibility: boolean;
@@ -39,7 +39,7 @@ export const DialogWarp = ({
           <Box className={classes.title}>
             {title}
           </Box>
-          <img className={classes.close} onClick={() => setVisibility(false)} src={ClosePng} alt=''/>
+          {/* <img className={classes.close} onClick={() => setVisibility(false)} src={ClosePng} alt=''/> */}
         </Box>
         {children}
 
