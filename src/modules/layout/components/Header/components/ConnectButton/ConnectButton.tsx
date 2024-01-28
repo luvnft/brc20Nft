@@ -14,12 +14,13 @@ import { useBtc } from 'modules/web3/wallet';
 // import { useDispatchRequest } from '@redux-requests/react';
 import {BtcConnectorName} from 'modules/web3/wallet';
 
+
 const ConnectButtonPage = (
   { classes = {} }: { classes: any },
 ) => {
   let [visibility, setVisibility] = useState<boolean>(false);
   const controlRef = useRef<HTMLButtonElement>(null);
-  const { connect, address, signMessage, disconnect } = useBtc();
+  const { connect, address, signMessage, disconnect } = useBtc(); // BTC
   const {
     isOpened,
     handleClose,
@@ -28,7 +29,6 @@ const ConnectButtonPage = (
   const connectClick = () => {
     if (address) return false;
     setVisibility(true)
-
   };
   const connectWalletClick=(type:BtcConnectorName)=>{
     connect(type).then((res: any) => {
@@ -101,7 +101,7 @@ const ConnectButtonPage = (
               <Button
                 type='button'
                 onClick={()=>connectWalletClick('OKX')}
-                className={classNames(classes.backButtonOrder, 'back')}
+                className={classNames('back')}
                 loading={false}>
                 OKX
               </Button>

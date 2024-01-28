@@ -6,9 +6,11 @@ import { Logo } from '../Logo';
 import { Applink } from '../AppLink';
 import { Button } from '../../../uiKit/Button';
 import { NavLink } from 'react-router-dom';
-import { useIsMDDown } from '../../../themes/useTheme';
+// import { useIsSMDown } from '../../../themes/useTheme';
 // import { HeaderNavationDrawer } from './components/HeaderNavationDrawer';
-import {ConnectButton} from './components/ConnectButton';
+// import {ConnectButton} from './components/ConnectButton';
+import { useAccount } from '../../../account/hooks/useAccount';
+
 
 export const routers = [
   {
@@ -47,7 +49,8 @@ interface HeaderProps {
 
 export const Header = ({ scrollShow }: HeaderProps) => {
   const classes = useHeaderStyles();
-  const mobile = useIsMDDown();
+  // const mobile = useIsSMDown();
+  const {handleConnect}=useAccount(); // ETH
   return (
     <header className={classNames(classes.root, scrollShow && 'bg')}>
       <Box className={classNames(classes.left)}>
@@ -70,7 +73,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
         }
       </Box>
 
-      <Box className={classNames(classes.center)}>
+      <Box className={classNames(classes.right)}>
         {
           otherRouter.map(d => {
             return (
@@ -91,7 +94,16 @@ export const Header = ({ scrollShow }: HeaderProps) => {
       </Box>
       <Applink/>
       <Box className={classNames(classes.right)}>
-        <ConnectButton />
+        {/* <ConnectButton /> */}
+        
+        {/* ETH */}
+        <Button
+          type='button'
+          onClick={handleConnect}
+          className={classNames(classes.backButtonOrder, 'back')}
+          loading={false}>
+          Connect
+        </Button>
         
         {/* <HeaderNavationDrawer /> */}
       </Box>
