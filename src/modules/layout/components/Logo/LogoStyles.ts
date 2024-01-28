@@ -12,9 +12,10 @@ export const useLogoStyles = makeStyles<Theme>(theme => ({
   },
   img: {
     display: 'block',
-    // width: '30px',
-    height: '30px',
-    marginRight: '30px',
+    // width: '30px', 
+    height: '4.8rem',
+    marginRight: '32rem',
+    marginLeft: '16.9rem',
     // marginBottom:'5px',
     [theme.breakpoints.down('md')]: {
       marginRight: '15px',

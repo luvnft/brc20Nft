@@ -12,13 +12,21 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     transition: 'all 1s',
+    backgroundColor: '#1A1B31',
     '&.bg': {
-      backgroundColor: 'red',
+      backgroundColor: '#1A1B31',
     },
   },
   left: {
     display: 'flex',
     alignItems: 'center',
+  },
+  center: {
+    display: 'flex',
+    alignItems: 'center',
+    '& .link': {
+      padding: '0 1rem',
+    }
   },
   right: {
     display: 'flex',
@@ -28,20 +36,21 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     justifyContent: 'flex-end',
   },
   linkText: {
-    fontFamily: 'DarkStar-Bold !important',
+    color: 'white',
+    fontSize: '1.4rem',
+    fontFamily: '    ',
+    fontWeight: 400,
+    textTransform: 'uppercase',
+    wordWrap: 'break-word',
   },
   link: {
     color: '#222',
-    fontSize: '2rem !important',
     fontStyle: 'normal',
     fontWeight: 400,
     display: 'flex',
     alignItems: 'center',
     padding: '0 0.8rem',
     position: 'relative',
-    '&.css':{
-
-    },
     [theme.breakpoints.down('sm')]: {
       // max-width=750
       display: 'none',

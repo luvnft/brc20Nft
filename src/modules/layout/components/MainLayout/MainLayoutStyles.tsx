@@ -6,7 +6,7 @@ export const useMainLayoutStyles = makeStyles<Theme>(theme => ({
     height: '100%',
   },
   content: {
-    minHeight: 'calc(100% - 30rem)',
+    minHeight: 'calc(100% - 8rem)',
     overflowX: 'hidden',
     '&.scroll':{
       // height: 'calc(100% - 37rem)',

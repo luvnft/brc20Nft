@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+img {
+  vertical-align: bottom;
+}
 body, html, #root {
     width: 100%;
     height: 100%;
