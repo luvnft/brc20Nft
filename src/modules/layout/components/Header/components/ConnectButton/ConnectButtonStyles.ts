@@ -89,4 +89,33 @@ export const styles = (theme: Theme): StyleRules => ({
       display: 'none',
     },
   },
+  buyButtonOrder: {
+    margin:'0 10px',
+    width: '46%',
+    borderRadius: 0,
+    color: '#ffffff',
+    fontSize: 16,
+    fontWeight: 400,
+    wordWrap: 'break-word',
+    fontFamily: 'TTF-Pixer-Regular-ttf',
+    '& span': {
+      fontFamily: 'TTF-Pixer-Regular-ttf',
+    }
+  },
+  backButtonOrder: {
+    margin:'0 10px',
+    width: '46%',
+    borderRadius: 0,
+    color: '#424242',
+    fontSize: 16,
+    fontWeight: 400,
+    wordWrap: 'break-word',
+    fontFamily: 'TTF-Pixer-Regular-ttf',
+    '& span': {
+      fontFamily: 'TTF-Pixer-Regular-ttf',
+    }
+  },
+  diaTop:{
+    height:'20rem'
+  }
 });
