@@ -8,6 +8,8 @@ import { NavLink } from 'react-router-dom';
 import { useIsMDDown } from '../../../themes/useTheme';
 import { HeaderNavationDrawer } from './components/HeaderNavationDrawer';
 import {ConnectButton} from './components/ConnectButton';
+import { useAccount } from '../../../account/hooks/useAccount';
+
 
 export const routers = [
   {
@@ -33,6 +35,7 @@ interface HeaderProps {
 export const Header = ({ scrollShow }: HeaderProps) => {
   const classes = useHeaderStyles();
   const mobile = useIsMDDown();
+  const {handleConnect}=useAccount(); // ETH
   return (
     <header className={classNames(classes.root, scrollShow && 'bg')}>
       <Box className={classNames(classes.left)}>
@@ -59,6 +62,13 @@ export const Header = ({ scrollShow }: HeaderProps) => {
 
       <Box className={classNames(classes.right)}>
         <ConnectButton />
+        <Button
+          type='button'
+          onClick={handleConnect}
+          className={classNames(classes.backButtonOrder, 'back')}
+          loading={false}>
+          ETHConnect
+        </Button>
         {
           !mobile && <Box
             className={classNames(classes.button, 'app')}

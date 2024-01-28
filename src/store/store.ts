@@ -2,7 +2,7 @@ import { createDriver as createAxiosDriver } from '@redux-requests/axios';
 import {
   // abortRequests,
   Driver,
-  // getQuery,
+  getQuery,
   handleRequests,
 } from '@redux-requests/core';
 import { createDriver } from '@redux-requests/promise';
@@ -13,7 +13,7 @@ import { i18nSlice } from 'modules/i18n/i18nSlice';
 import { LAYOUT_STATE_NAME, layoutReducer } from 'modules/layout/store/layout';
 import { persistReducer, persistStore } from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
-// import { setAccount } from '../modules/account/store/actions/setAccount';
+import { setAccount } from '../modules/account/store/actions/setAccount';
 import { extractMessage } from '../modules/common/utils/extractError';
 import { historyInstance } from '../modules/common/utils/historyInstance';
 import { NotificationActions } from 'modules/notification/store/NotificationActions';
@@ -240,13 +240,14 @@ const { requestsReducer, requestsMiddleware } = handleRequests({
 
   },
   onRequest: (request, action, store) => {
-    // const rootState: RootState = store.getState();
-    //
-    // const { data } = getQuery(rootState, {
-    //   type: setAccount.toString(),
-    //   action: setAccount,
-    // });
-    // console.log('data', data);
+    const rootState: RootState = store.getState();
+
+    const { data } = getQuery(rootState, {
+      type: setAccount.toString(),
+      action: setAccount,
+    });
+    console.log('data', data);
+
 
     // const chainId =
     //   data?.chainId ?? getChainId() ?? getNotWeb3WalletInfo()?.chainId;
