@@ -56,3 +56,13 @@
     font-family: 'DarkStar-Bold';
     src: url('./front/darkstar.ttf');
 }
+
+@font-face {
+  font-family: 'eryaxindahei';
+  src: url('./front/eryaxindahei.ttf');
+}
+
+@font-face {
+  font-family: 'Gravity';
+  src: url('./front/Gravity/Gravity-V546.otf') format('opentype');
+}

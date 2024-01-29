@@ -100,7 +100,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
         <Button
           type='button'
           onClick={handleConnect}
-          className={classNames(classes.backButtonOrder, 'back')}
+          className={classNames(classes.connect, 'back')}
           loading={false}>
           Connect
         </Button>

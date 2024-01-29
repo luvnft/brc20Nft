@@ -149,7 +149,7 @@ export const useHomeStyle = makeStyles((theme: Theme) => ({
       },
       '& p': {
         color: 'white',
-        fontSize: '3rem',
+        fontSize: '3.2rem',
         fontFamily: 'Gravity',
         fontWeight: '400',
         wordWrap: 'break-word',
