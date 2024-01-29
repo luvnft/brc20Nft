@@ -1,4 +1,4 @@
-import { Switch, Redirect, HashRouter } from 'react-router-dom';
+import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom'; 
 import { MainLayout } from 'modules/layout/components/MainLayout';
 import { PageNotFound } from 'modules/router/components/PageNotFound';
 import { PageComingSoon } from 'modules/router/components/PageComingSoon';
@@ -11,33 +11,37 @@ export function Routes() {
   return (
     <MainLayout headerTheme={CurrentTheme}>
       <AnimateSwitch>
-        <HashRouter>
-          <ProgressBar
-            exact
-            path='/'
-            render={() => <Redirect to={HomeRoutesConfig.Index.path} />}
-          />
-          <ProgressBar
-            exact
-            path={HomeRoutesConfig.Index.path}
-            render={() => (
-              <HomeRoutes />
-            )}
-          />
-          <ProgressBar
-            exact
-            path={'/coming_soon'}
-            render={() => (
-              <PageComingSoon />
-            )}
-          />
-
-          <ProgressBar
-            render={() => (
-              <PageNotFound />
-            )}
-          />
-        </HashRouter>
+        <Router>
+          <Switch>
+              <ProgressBar
+                exact
+                path='/'
+                render={() => <Redirect to={HomeRoutesConfig.Index.path} />}
+              />
+              <ProgressBar
+                exact
+                path={HomeRoutesConfig.Index.path}
+                render={() => (
+                  <HomeRoutes />
+                )}
+              />
+              <ProgressBar
+                exact
+                path={'/coming_soon'}
+                render={() => (
+                  <PageComingSoon />
+                )}
+              />
+              <ProgressBar
+                exact
+                path={'/404'}
+                render={() => (
+                  <PageNotFound />
+                )}
+              />
+              <Redirect to="/404"/>
+            </Switch>
+          </Router>
       </AnimateSwitch>
 
     </MainLayout>

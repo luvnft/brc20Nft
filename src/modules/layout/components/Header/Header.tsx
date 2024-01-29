@@ -14,17 +14,17 @@ import { useAccount } from '../../../account/hooks/useAccount';
 
 export const routers = [
   {
-    link: '/home',
+    link: '#/home',
     title: 'HOME',
     component: NavLink
   },
   {
-    link: '/evm',
+    link: '#/evm',
     title: 'EVM',
     component: NavLink
   },
   {
-    link: '/privacy',
+    link: '#/privacy',
     title: 'PRIVACY',
     component: NavLink
   },
@@ -32,12 +32,12 @@ export const routers = [
 
 export const otherRouter = [
   {
-    link: '/home',
+    link: '#/home',
     title: 'COMPLIANCE & SECURUTY',
     component: 'a'
   },
   {
-    link: '/evm',
+    link: '#/evm',
     title: 'X TERMINAL',
     component: 'a'
   },
@@ -100,9 +100,8 @@ export const Header = ({ scrollShow }: HeaderProps) => {
         <Button
           type='button'
           onClick={handleConnect}
-          className={classNames(classes.connect, 'back')}
-          loading={false}>
-          Connect
+          className={classNames(classes.connectBtn, 'back')}>
+            Connect
         </Button>
         
         {/* <HeaderNavationDrawer /> */}

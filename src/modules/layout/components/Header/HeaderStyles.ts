@@ -43,7 +43,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     textTransform: 'uppercase',
     wordWrap: 'break-word',
   },
-  connect: {
+  connectBtn: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
