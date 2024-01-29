@@ -1,4 +1,4 @@
-import { Switch, Redirect } from 'react-router-dom';
+import { Switch, Redirect, HashRouter } from 'react-router-dom';
 import { MainLayout } from 'modules/layout/components/MainLayout';
 import { PageNotFound } from 'modules/router/components/PageNotFound';
 import { PageComingSoon } from 'modules/router/components/PageComingSoon';
@@ -11,7 +11,7 @@ export function Routes() {
   return (
     <MainLayout headerTheme={CurrentTheme}>
       <AnimateSwitch>
-        <Switch>
+        <HashRouter>
           <ProgressBar
             exact
             path='/'
@@ -37,7 +37,7 @@ export function Routes() {
               <PageNotFound />
             )}
           />
-        </Switch>
+        </HashRouter>
       </AnimateSwitch>
 
     </MainLayout>

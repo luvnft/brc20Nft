@@ -2,7 +2,7 @@
     "name": "market",
     "version": "0.1.0",
     "private": true,
-    "homepage": "/build",
+    "homepage": "./",
     "dependencies": {
         "@better-scroll/core": "^2.5.1",
         "@date-io/date-fns": "1.x",
