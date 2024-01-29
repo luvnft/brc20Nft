@@ -34,6 +34,28 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     height: '100%',
     // width: '226px',
     justifyContent: 'flex-end',
+    '& .connectBtn': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '16rem',
+      height: '4.8rem',
+      borderRadius: 50,
+      color: 'white',
+      fontSize: '1.6rem',
+      fontFamily: 'Gravity',
+      fontWeight: 400,
+      textTransform: 'uppercase',
+      wordWrap: 'break-word',
+      border: '1px white solid',
+      backgroundColor: 'rgba(255, 255, 255, 0)',
+      '&:hover': {
+        backgroundColor: '#9A97E9',
+      },
+      [theme.breakpoints.down('sm')]: {
+        display: 'none',
+      },
+    },
   },
   linkText: {
     color: 'white',
@@ -43,28 +65,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     textTransform: 'uppercase',
     wordWrap: 'break-word',
   },
-  connectBtn: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '16rem',
-    height: '4.8rem',
-    borderRadius: 50,
-    color: 'white',
-    fontSize: '1.6rem',
-    fontFamily: 'Gravity',
-    fontWeight: 400,
-    textTransform: 'uppercase',
-    wordWrap: 'break-word',
-    border: '1px white solid',
-    backgroundColor: 'rgba(255, 255, 255, 0)',
-    '&:hover': {
-      backgroundColor: '#9A97E9',
-    },
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
-  },
+  
   link: {
     color: '#222',
     fontStyle: 'normal',
