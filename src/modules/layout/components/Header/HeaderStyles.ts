@@ -7,7 +7,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     top: 0,
     left: 0,
     zIndex: 101,
-    padding: '0 2rem',
+    padding: '0 19rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -20,6 +20,16 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
   left: {
     display: 'flex',
     alignItems: 'center',
+    '& .leftLogo': {
+      marginRight: '32rem',
+    },
+    '& .leftButton': {
+      display: 'flex',
+      gap: '4rem',
+      '& a': {
+        padding: 0,
+      }
+    }
   },
   center: {
     display: 'flex',
@@ -72,7 +82,6 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     fontWeight: 400,
     display: 'flex',
     alignItems: 'center',
-    padding: '0 0.8rem',
     position: 'relative',
     [theme.breakpoints.down('sm')]: {
       // max-width=750

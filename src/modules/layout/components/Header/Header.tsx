@@ -28,20 +28,30 @@ export const routers = [
     title: 'PRIVACY',
     component: NavLink
   },
-];
-
-export const otherRouter = [
   {
     link: '#/home',
     title: 'COMPLIANCE & SECURUTY',
-    component: 'a'
+    component: NavLink
   },
   {
     link: '#/evm',
     title: 'X TERMINAL',
-    component: 'a'
+    component: NavLink
   },
 ];
+
+// export const otherRouter = [
+//   {
+//     link: '#/home',
+//     title: 'COMPLIANCE & SECURUTY',
+//     component: 'a'
+//   },
+//   {
+//     link: '#/evm',
+//     title: 'X TERMINAL',
+//     component: 'a'
+//   },
+// ];
 
 interface HeaderProps {
   scrollShow: boolean
@@ -54,26 +64,30 @@ export const Header = ({ scrollShow }: HeaderProps) => {
   return (
     <header className={classNames(classes.root, scrollShow && 'bg')}>
       <Box className={classNames(classes.left)}>
-        <Logo />
-        {
-          routers.map(d => {
-            return (
-              <Button
-                key={d.link}
-                component={d.component}
-                variant='text'
-                className={classNames(classes.link)}
-                activeclassname={classNames(classes.activeLink)}
-                to={d.link}
-              >
-                <span className={classNames(classes.linkText)}>{d.title}</span>
-              </Button>
-            );
-          })
-        }
+        <Box className={classNames('leftLogo')}>
+          <Logo />
+        </Box>
+        <Box className={classNames('leftButton')}>
+          {
+            routers.map(d => {
+              return (
+                <Button
+                  key={d.link}
+                  component={d.component}
+                  variant='text'
+                  className={classNames(classes.link)}
+                  activeclassname={classNames(classes.activeLink)}
+                  to={d.link}
+                >
+                  <span className={classNames(classes.linkText)}>{d.title}</span>
+                </Button>
+              );
+            })
+          }
+        </Box>
       </Box>
 
-      <Box className={classNames(classes.right)}>
+      {/* <Box className={classNames(classes.right)}>
         {
           otherRouter.map(d => {
             return (
@@ -91,7 +105,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
           })
         }
 
-      </Box>
+      </Box> */}
       <Applink/>
       <Box className={classNames(classes.right)}>
         {/* <ConnectButton /> */}
@@ -103,7 +117,6 @@ export const Header = ({ scrollShow }: HeaderProps) => {
           className={classNames('connectBtn', 'back')}>
             Connect
         </Button>
-        
         {/* <HeaderNavationDrawer /> */}
       </Box>
 

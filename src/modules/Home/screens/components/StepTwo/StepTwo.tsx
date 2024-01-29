@@ -5,6 +5,8 @@ import { StepTitle } from '../StepTitle'
 import { StepTwoCard } from '../StepTwoCard'
 import stepTwoLine from 'assets/img/home/step2/Line.png'
 import stepTwoImage1 from 'assets/img/home/step2/image1.png'
+import stepTwoImage2 from 'assets/img/home/step2/image2.png'
+import stepTwoImage3 from 'assets/img/home/step2/image3.png'
 import stepTwoquotLeft from 'assets/img/home/step2/quot-left.png'
 import stepTwoquotRight from 'assets/img/home/step2/quot-right.png'
 import stepTwoHeader from 'assets/img/home/step2/header.png'
@@ -44,7 +46,7 @@ export const StepTwo = () => {
         </Box>
         <Box className={classNames('steptwo-wrap-main-TWOandThree')}>
           <Box className={classNames('steptwo-wrap-main-TWOandThree-img')}>
-            <img src={stepTwoImage1} alt="stepTwoImage1" />  
+            <img src={stepTwoImage2} alt="stepTwoImage2" />  
           </Box>
           <Box className={classNames('steptwo-wrap-main-TWOandThree-card')}>
             <StepTwoCard title="TWO" desc="Extending Privacy to Identity" content="As on-chain (and online) identities become increasingly important, privacy becomes more important as well. On X Terminals, you can build projects that will give users control of their identity and advanced protection against cyber attacks."/>
@@ -55,7 +57,7 @@ export const StepTwo = () => {
             <StepTwoCard title="THREE" desc="Projects that launch on X Terminals will give users the ability to control who sees their data and assets." content="Blockchain is about more than tokens. Not your keys, not your data. Privacy prepares blockchains real-world use." />
           </Box>
           <Box className={classNames('steptwo-wrap-main-TWOandThree-img')}>
-            <img src={stepTwoImage1} alt="stepTwoImage1" />  
+            <img src={stepTwoImage3} alt="stepTwoImage3" />  
           </Box>
         </Box>
       </Box>

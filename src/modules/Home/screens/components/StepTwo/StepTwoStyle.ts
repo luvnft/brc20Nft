@@ -8,7 +8,7 @@ export const useStepTwoStyles = makeStyles<Theme>(theme => ({
       position: 'relative',
       '& .steptwo-wrap-title-privacy': {
         width: '100%',
-        position: 'absolute',
+        position: 'relative',
         top: '41.6rem'
       },
       '& img': {

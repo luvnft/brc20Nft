@@ -90,7 +90,7 @@ export const useHomeStyle = makeStyles((theme: Theme) => ({
       '& .center-left-space': {
         width: '100%',
         height: '24rem',
-        ...cardBackgroundTheme({ from: '#CFEF54', to: '#CFEF54', x: '-0.4rem', y: '0.6rem' }),
+        ...cardBackgroundTheme({ from: '#CFEF54', to: '#CFEF54', x: '-0.4rem', y: '-0.6rem' }),
         boxSizing: 'border-box',
         padding: '2.9rem 8rem',
         '& img': {
