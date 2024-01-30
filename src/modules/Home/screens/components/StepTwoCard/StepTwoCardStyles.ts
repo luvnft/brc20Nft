@@ -13,6 +13,9 @@ export const useStepTwoCardStyles = makeStyles<Theme>(theme => ({
       textTransform: 'uppercase',
       wordWrap: 'break-word',
       marginBottom: '1rem',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '3.2rem',
+      },
     },
     '& .desc': {
       color: 'white',
@@ -21,6 +24,10 @@ export const useStepTwoCardStyles = makeStyles<Theme>(theme => ({
       fontWeight: '700',
       wordWrap: 'break-word',
       marginBottom: '2.4rem',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '4.8rem',
+        marginBottom: '5rem',
+      },
     },
     '& .content': {
       color: 'rgba(255,255,255,0.5)',
@@ -28,7 +35,11 @@ export const useStepTwoCardStyles = makeStyles<Theme>(theme => ({
       fontFamily: 'Gravity',
       fontWeight: '700',
       lineHeight: '3.2rem',
-      wordWrap: 'break-word'
+      wordWrap: 'break-word',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '3.2rem',
+        lineHeight: '3.7rem',
+      },
     },
   },
 }));

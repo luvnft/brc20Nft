@@ -4,6 +4,7 @@ import { useStepTwoStyles } from './StepTwoStyle';
 import { StepTitle } from '../StepTitle'
 import { StepTwoCard } from '../StepTwoCard'
 import stepTwoLine from 'assets/img/home/step2/Line.png'
+import stepTwoLineMobile from 'assets/img/home/step2/LineMobile.png'
 import stepTwoImage1 from 'assets/img/home/step2/image1.png'
 import stepTwoImage2 from 'assets/img/home/step2/image2.png'
 import stepTwoImage3 from 'assets/img/home/step2/image3.png'
@@ -11,8 +12,10 @@ import stepTwoquotLeft from 'assets/img/home/step2/quot-left.png'
 import stepTwoquotRight from 'assets/img/home/step2/quot-right.png'
 import stepTwoHeader from 'assets/img/home/step2/header.png'
 import stepTwoLine2 from 'assets/img/home/step2/Line2.png'
+import {useIsSMDown} from "modules/themes/useTheme";
 export const StepTwo = () => {
   const classes = useStepTwoStyles();
+  const mobile=useIsSMDown();
   return (
     <Box className={classNames(classes.steptwo)}>
       <Box className={classNames('steptwo-wrap')}>
@@ -20,12 +23,17 @@ export const StepTwo = () => {
         <Box className={classNames('steptwo-wrap-title-privacy')}>
           <StepTitle number='02' title='Privacy Focused' />
         </Box>
-        <img src={ stepTwoLine } alt="stepTwoLine" />
+        <img src={ mobile ? stepTwoLineMobile : stepTwoLine } alt="stepTwoLine" />
       </Box>
       <Box className={classNames('steptwo-wrap-main')}>
         <Box className={classNames('steptwo-wrap-main-ONE')}>
+          {
+            mobile && <img src={stepTwoImage1} alt="stepOneRight" />
+          }
           <StepTwoCard title="ONE" desc="X Terminals leverages Scroll's built-in zero-knowledge technology to empower developers to build privacy into the dApps." content="Though X Terminals, Scroll becomes the best place to launch a private DeFi dApp. Founders can create projects that are ready for real-world business use because they can offer confidential transfers that will protect IP, consumer data, and sensitive information. DeFi is growing up through X Terminals and Scroll."/>
-          <img src={stepTwoImage1} alt="stepOneRight" />
+          {
+            !mobile && <img src={stepTwoImage1} alt="stepOneRight" />
+          }
         </Box>
         <Box className={classNames('steptwo-wrap-main-evaluate')}>
           <Box className={classNames('steptwo-wrap-main-evaluate-left')}>
@@ -44,13 +52,20 @@ export const StepTwo = () => {
             <img className={classNames('stepTwoLine2')} src={stepTwoLine2} alt="stepTwoLine2" />
           </Box>
         </Box>
-        <Box className={classNames('steptwo-wrap-main-TWOandThree')}>
-          <Box className={classNames('steptwo-wrap-main-TWOandThree-img')}>
+          <Box className={classNames('steptwo-wrap-main-TWOandThree')}>
+          {
+            !mobile && <Box className={classNames('steptwo-wrap-main-TWOandThree-img')}>
             <img src={stepTwoImage2} alt="stepTwoImage2" />  
           </Box>
+          }
           <Box className={classNames('steptwo-wrap-main-TWOandThree-card')}>
             <StepTwoCard title="TWO" desc="Extending Privacy to Identity" content="As on-chain (and online) identities become increasingly important, privacy becomes more important as well. On X Terminals, you can build projects that will give users control of their identity and advanced protection against cyber attacks."/>
           </Box>
+          {
+            mobile && <Box className={classNames('steptwo-wrap-main-TWOandThree-img')}>
+              <img src={stepTwoImage2} alt="stepTwoImage2" />  
+            </Box>
+          }
         </Box>
         <Box className={classNames('steptwo-wrap-main-TWOandThree')}>
           <Box className={classNames('steptwo-wrap-main-TWOandThree-card', 'paddingLeft')}>

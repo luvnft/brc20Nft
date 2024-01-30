@@ -19,6 +19,7 @@ export const useStepTitleStyles = makeStyles<Theme>(theme => ({
         fontFamily: 'eryaxindahei',
         fontWeight: '400',
         wordWrap: 'break-word',
+        
       },
     },
   },
@@ -30,5 +31,8 @@ export const useStepTitleStyles = makeStyles<Theme>(theme => ({
     fontWeight: 400,
     wordWrap: 'break-word',
     textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '5.2rem',
+    },
   },
 }));

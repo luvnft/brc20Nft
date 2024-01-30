@@ -15,6 +15,15 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     backgroundColor: '#1A1B31',
     '&.bg': {
       backgroundColor: '#1A1B31',
+      [theme.breakpoints.down('sm')]: {
+        backgroundColor: '#121323',
+      },
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '12rem',
+      // padding: '12.8rem 6rem 12.6rem 6rem',
+      padding: '0 6rem',
+      backgroundColor: '#121323',
     },
   },
   left: {

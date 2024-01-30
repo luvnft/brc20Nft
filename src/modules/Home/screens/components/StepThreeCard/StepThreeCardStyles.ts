@@ -24,6 +24,11 @@ export const useStepThreeCardStyles = makeStyles<Theme>(theme => ({
       position: 'absolute',
       right: '5.8rem',
       bottom: '-12rem',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '20rem',
+        bottom: '-11.8rem',
+        right: '2.4rem',
+      },
     },
   },
 }));

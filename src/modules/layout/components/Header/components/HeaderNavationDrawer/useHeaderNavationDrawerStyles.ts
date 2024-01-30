@@ -18,8 +18,7 @@ export const styles = (theme: Theme): StyleRules => ({
     },
   },
   userIcon: {
-    width: '26px',
-    height: '18px',
+    height: '3.8rem',
     margin: 'auto',
   },
   drawerBody: {

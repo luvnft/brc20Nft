@@ -6,8 +6,8 @@ import { Logo } from '../Logo';
 import { Applink } from '../AppLink';
 import { Button } from '../../../uiKit/Button';
 import { NavLink } from 'react-router-dom';
-// import { useIsSMDown } from '../../../themes/useTheme';
-// import { HeaderNavationDrawer } from './components/HeaderNavationDrawer';
+import { useIsSMDown } from '../../../themes/useTheme';
+import { HeaderNavationDrawer } from './components/HeaderNavationDrawer';
 // import {ConnectButton} from './components/ConnectButton';
 import { useAccount } from '../../../account/hooks/useAccount';
 
@@ -59,7 +59,7 @@ interface HeaderProps {
 
 export const Header = ({ scrollShow }: HeaderProps) => {
   const classes = useHeaderStyles();
-  // const mobile = useIsSMDown();
+  const mobile = useIsSMDown();
   const {handleConnect}=useAccount(); // ETH
   return (
     <header className={classNames(classes.root, scrollShow && 'bg')}>
@@ -67,7 +67,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
         <Box className={classNames('leftLogo')}>
           <Logo />
         </Box>
-        <Box className={classNames('leftButton')}>
+       { !mobile && <Box className={classNames('leftButton')}>
           {
             routers.map(d => {
               return (
@@ -84,7 +84,7 @@ export const Header = ({ scrollShow }: HeaderProps) => {
               );
             })
           }
-        </Box>
+        </Box>}
       </Box>
 
       {/* <Box className={classNames(classes.right)}>
@@ -106,18 +106,18 @@ export const Header = ({ scrollShow }: HeaderProps) => {
         }
 
       </Box> */}
-      <Applink/>
+      {!mobile && <Applink/>}
       <Box className={classNames(classes.right)}>
         {/* <ConnectButton /> */}
         
         {/* ETH */}
-        <Button
+        {!mobile && <Button
           type='button'
           onClick={handleConnect}
           className={classNames('connectBtn', 'back')}>
             Connect
-        </Button>
-        {/* <HeaderNavationDrawer /> */}
+        </Button>}
+        <HeaderNavationDrawer />
       </Box>
 
     </header>

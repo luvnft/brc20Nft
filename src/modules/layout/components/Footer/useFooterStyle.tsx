@@ -11,6 +11,9 @@ export const useFooterStyle = makeStyles((theme: Theme) => ({
     padding: '0 27rem',
     [theme.breakpoints.down('md')]: {
       height: 'auto',
+      padding: '0 0 19.4rem 0',
+      justifyContent: 'center',
+      backgroundColor: '#121323',
     },
   },
 }));

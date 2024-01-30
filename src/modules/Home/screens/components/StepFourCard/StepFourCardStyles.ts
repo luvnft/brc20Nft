@@ -9,9 +9,12 @@ export const useStepFourCardStyles = makeStyles<Theme>(theme => ({
     background: '#1A1B31',
     borderRadius: '4rem',
     padding: '4.8rem 5rem',
+    [theme.breakpoints.down('sm')]: {
+      padding: '5rem',
+    },
     '& .img': {
       '& img': {
-        height: '23rem'
+        height: '30.8rem'
       }
     },
     '& .desc': {
@@ -20,6 +23,9 @@ export const useStepFourCardStyles = makeStyles<Theme>(theme => ({
       fontFamily: 'Gravity',
       fontWeight: '700',
       wordWrap: 'break-word',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '3.2rem',
+      },
     },
   },
 }));

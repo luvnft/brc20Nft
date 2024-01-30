@@ -4,17 +4,20 @@ import { useStepFourStyles } from './StepFourStyle';
 import { StepTitle } from '../StepTitle'
 import { StepFourCard } from '../StepFourCard'
 import stepFourStar from 'assets/img/home/step4/star.png'
+import stepFourStarMoblie from 'assets/img/home/step4/starMoblie.png'
 import StepFourImage1 from 'assets/img/home/step4/image1.png'
 import StepFourImage2 from 'assets/img/home/step4/image2.png'
 import StepFourImage3 from 'assets/img/home/step4/image3.png'
+import {useIsSMDown} from "modules/themes/useTheme";
 export const StepFour = () => {
   const classes = useStepFourStyles();
+  const mobile=useIsSMDown();
   return (
     <Box className={classNames(classes.stepFour)}>
       <Box className={classNames('stepFour-wrap')}>
         <Box className={classNames('stepFour-wrap-title')}>
           <StepTitle number='04' title='X Terminals: <br/> Scaling Ethereum Through ZK' />
-          <img src={ stepFourStar } alt="stepFourStar"/>
+          <img src={ mobile ? stepFourStarMoblie : stepFourStar } alt="stepFourStar"/>
         </Box>
         <Box className={classNames('stepFour-wrap-cardList')}>
           <StepFourCard img={StepFourImage3} desc="Scroll's powerful zkEVM means that projects on X Terminals offer high-throughput and low slippage - perfect for DeFi."/>

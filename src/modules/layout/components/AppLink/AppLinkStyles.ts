@@ -6,7 +6,10 @@ export const useAppLinkStyles = makeStyles<Theme>(theme => ({
     gap: '2rem',
     alignItems: 'center',
     '& .img': {
-      height: '3.2rem'
+      height: '3.2rem',
+      [theme.breakpoints.down('sm')]: {
+        height: '6.4rem'
+      },
     }
   },
 }));
