@@ -66,3 +66,8 @@
   font-family: 'Gravity';
   src: url('./front/Gravity/Gravity-V546.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./front/Gilroy-Light.ttf');
+}
+
