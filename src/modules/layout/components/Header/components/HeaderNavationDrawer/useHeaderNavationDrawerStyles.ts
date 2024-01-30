@@ -18,24 +18,32 @@ export const styles = (theme: Theme): StyleRules => ({
     },
   },
   userIcon: {
-    height: '3.8rem',
+    height: '3.6rem',
     margin: 'auto',
   },
   drawerBody: {
-    padding: '0 2rem',
+    padding: '15.8rem 6rem 0 6rem',
     width: '100vw',
     height: '100%',
-    backgroundColor: '#D2D1F2',
+    boxSizing: 'border-box',
+    background: 'rgba(3, 2, 19, 0.90)', backdropFilter: 'blur(20px)',
+  },
+  drawerBodyTop: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   linkWrap: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    gap: '6rem',
+    paddingTop: '30rem',
   },
   link: {
-    color: '#010101',
-    fontSize: '4.8rem',
-    fontFamily: 'DarkStar-Bold',
+    color: 'white',
+    fontSize: '3.6rem',
+    fontFamily: 'Gravity',
     fontWeight: 400,
     wordWrap: 'break-word',
     textAlign: 'center',
@@ -43,6 +51,12 @@ export const styles = (theme: Theme): StyleRules => ({
     '& span': {
       justifyContent: 'center',
     },
+  },
+  linkText: {
+    color: 'white',
+    fontSize: '3.6rem',
+    fontFamily: 'Gravity',
+    fontWeight: 400,
   },
   childrenLink: {
     color: '#413E7B',
@@ -60,6 +74,13 @@ export const styles = (theme: Theme): StyleRules => ({
     padding: '2rem 0',
   },
   activeLink: {
-    // color: fade(theme.palette.common.white, .8),
+    fontSize: '6.4rem',
+    fontFamily: 'Gravity',
+    fontWeight: 700,
   },
+  applink: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '41rem'
+  }
 });

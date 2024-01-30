@@ -20,9 +20,10 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
       },
     },
     [theme.breakpoints.down('sm')]: {
-      height: '12rem',
+      position: 'initial',
+      height: 'auto',
       // padding: '12.8rem 6rem 12.6rem 6rem',
-      padding: '0 6rem',
+      padding: '15.8rem 6rem 0 6rem',
       backgroundColor: '#121323',
     },
   },
@@ -31,6 +32,9 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     alignItems: 'center',
     '& .leftLogo': {
       marginRight: '32rem',
+      [theme.breakpoints.down('sm')]: {
+        marginRight: '19rem',
+      },
     },
     '& .leftButton': {
       display: 'flex',

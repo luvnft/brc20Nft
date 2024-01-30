@@ -9,8 +9,7 @@ export const styles = (theme: Theme): StyleRules => ({
     justifyContent: 'end',
   },
   closeImg: {
-    width: '20px',
-    height: '20px',
+    height: '3.6rem',
     cursor: 'pointer',
   },
 });

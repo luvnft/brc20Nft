@@ -1,5 +1,5 @@
 import React from 'react';
-import DarkCloseImg from 'assets/img/header/darkClose.png';
+import closeWhite from 'assets/img/header/closeWhite.png';
 import { Box } from '@material-ui/core';
 import { styles } from './useDraweCloseStyle';
 import { withStyles } from '@material-ui/core';
@@ -18,7 +18,7 @@ const DraweClose = (
 
   return (
     <Box className={classes.headerClose}>
-      <img src={DarkCloseImg} onClick={toggleDrawer} alt=''
+      <img src={closeWhite} onClick={toggleDrawer} alt=''
            className={classes.closeImg} />
     </Box>
   );

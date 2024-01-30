@@ -42,7 +42,9 @@ export const useHomeStyle = makeStyles((theme: Theme) => ({
     },
     '& .top-title': {
       paddingTop: '2rem',
-      paddingLeft: '7rem',
+      [theme.breakpoints.down('sm')]: {
+        paddingLeft: '7rem',
+      },
       '& .top-title-h2': {
         color: 'white',
         fontSize: '6rem',
