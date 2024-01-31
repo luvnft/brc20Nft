@@ -1,4 +1,4 @@
-import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom'; 
+import {HashRouter as Router, Switch, Redirect} from 'react-router-dom';
 import { MainLayout } from 'modules/layout/components/MainLayout';
 import { PageNotFound } from 'modules/router/components/PageNotFound';
 import { PageComingSoon } from 'modules/router/components/PageComingSoon';

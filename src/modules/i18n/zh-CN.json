@@ -1,74 +1,54 @@
 {
-    "public": {
-        "notMore": "暂无数据",
-        "noResult": "无结果",
-        "search": "搜索",
-        "scrollTop": "回到顶部",
-        "editSuccess": "修改成功",
-        "editError": "編集に失敗しました",
-        "more": "もっと",
-        "notItem": "没有项目",
-        "loadMore": "加载更多",
-        "showMore": "显示更多",
-        "showLess": "隐藏",
-        "notOnList": "暂无数据",
-        "sendCode": "发送",
-        "results": "个结果",
-        "hAgo": "{count} 小时前",
-        "minAgo": "{count} 分钟前",
-        "secsAgo": "{count} 秒前",
-        "emailVerificationSuccessful": "邮箱验证成功",
-        "againLater": "邮箱验证失败，请稍后重试"
-    },
+
     "change-wallet": {
-        "description": "变更为以太链，币安链或者火币链",
-        "submit": "变更网络",
-        "title": "网络错误"
+        "description": "Change network to the correct",
+        "submit": "Change network",
+        "title": "Wrong network"
     },
     "common": {
-        "copied": "复制成功！",
-        "copy-to-clipboard": "复制到剪贴板",
-        "restore": "恢复",
-        "apply": "申请",
-        "close": "关闭",
-        "reset": "重置"
+        "copied": "Copied!",
+        "copy-to-clipboard": "Copy to clipboard",
+        "restore": "Restore",
+        "apply": "Apply",
+        "close": "Close",
+        "reset": "Reset"
     },
     "connect-wallet": {
         "placeholder": {
-            "collection-title": "请连接钱包，以查看该作品集下的NFT",
-            "description": "请连接钱包，以浏览页面内容。",
-            "title": "连接钱包"
+            "collection-title": "To view collection items, you need to connect your wallet first",
+            "description": "The contents of this page are only viewable with a connected wallet",
+            "title": "Connect your wallet"
         }
     },
     "cropper": {
-        "flip-h": "水平翻转",
-        "flip-v": "垂直翻转",
-        "rotate-left": "向左旋转",
-        "rotate-right": "向右旋转"
+        "flip-h": "Flip horizontal",
+        "flip-v": "Flip vertical",
+        "rotate-left": "Rotate left",
+        "rotate-right": "Rotate right"
     },
     "details-nft": {
         "info": {
             "date": "{value, date, medium}",
-            "time": "{value, time, short}",
-            "view-scan": "在{name}浏览器上查看"
+            "time": "at {value, time, short}",
+            "view-scan": "View on {name}"
         }
     },
     "empty-data": {
-        "text": "请切换网络，以浏览页面内容",
-        "title": "抱歉，暂无数据"
+        "text": "Switch to the correct network to view the contents of this page.",
+        "title": "Whoops! Looks like there's no data."
     },
     "error": {
-        "data-is-not-available": "无法获取数据",
-        "greater-than": "数值需大于 {value}",
-        "less-than": "数值需小于 {value}",
-        "unexpected": "出现意外错误",
-        "contract-rejected": "合约操作被拒绝"
+        "data-is-not-available": "Data is not available",
+        "greater-than": "It must be greater than {value}",
+        "less-than": "It must be less than {value}",
+        "unexpected": "Server exception",
+        "contract-rejected": "Contract operation is rejected"
     },
     "form": {
         "limit-counter": "{value}/{maxLimit}"
     },
     "go-back": {
-        "action": "返回"
+        "action": "Go back"
     },
     "headers": {
         "connect": "Connect Wallet",
@@ -110,40 +90,12 @@
         "totalBalance": "Total balance",
         "wallet": "Wallet"
     },
-    "info-prices": {
-        "cancel": "下架",
-        "canceled": "已下架",
-        "claim": "领取",
-        "claimed": "已领取",
-        "status": {
-            "Claimed": {
-                "creator": "NFT已售出",
-                "default": "NFT已领取"
-            },
-            "CompletedByDirectPurchase": {
-                "buyer": "NFT已售出，请领取您的NFT",
-                "creator": "NFT已售出，请领取您的收入",
-                "others": "NFT已售出"
-            },
-            "Live": {
-                "creator": "拍卖正在进行中"
-            },
-            "NotSoldByReservePrice": {
-                "buyer": "NFT未售出，请取回您的出价",
-                "creator": "NFT未出售，请取回您的NFT",
-                "others": "NFT未出售"
-            }
-        },
-        "royalty": {
-            "rate-desc": "{rate}的版税收入会归给创建者"
-        }
-    },
     "language": {
         "en-US": "En",
         "zh-CN": "Zh",
-        "ja-JP": "Ja"
+        "ja-JP": "Ja",
+        "ko-KO": "Ko"
     },
-    "monthFormat": "{month, select, 1{一} 2{二} 3{三} 4{四} 5{五} 6{六} 7{七} 8{八} 9{九} 10{十} 11{十一} 12{十二}}月",
     "social": {
         "facebook": "Facebook",
         "instagram": "Instagram",
@@ -166,234 +118,8 @@
         "file-data": "{fileName} {fileSize}MB",
         "file-uploaded": "File uploaded"
     },
-    "video-player": {
-        "unsupported": "Sorry, your browser does not support embedded videos or uploaded video file types!"
-    },
+
     "not-support-chain": {
         "title": "Not support this chain"
-    },
-    "errorMessage": {
-        "theEmailHas": "The email has been sent, please check your mailbox",
-        "codeCannot": "Code cannot be sent before expiration"
-    },
-    "placeholder": {
-        "ContractToken": "输入合约/代币名称",
-        "emailVerificationCode": "邮箱验证码",
-        "googleVerificationCode": "谷歌验证码"
-    },
-    "button": {
-        "login": "登录",
-        "register":"注册",
-        "bind": "绑定",
-        "edit": "修改",
-        "exportPrivateKey": "导出私钥",
-        "next": "下一步",
-        "copy": "复制",
-        "delete": "删除",
-        "add": "新增",
-        "cancelTracking": "取消跟踪",
-        "trackingNotification": "跟踪通知",
-        "reset": "重置",
-        "sell": "卖出"
-    },
-    "home": {
-        "choosePlatform": "选择{DEXX}平台",
-        "active": "参与精彩活动，赢取丰厚奖励！",
-        "MetaMaskLogin": "通过MetaMask登录",
-        "emailLogin": "使用邮箱登录",
-        "orLogInVia": "或通过以下方式登录",
-        "cleverAddress": "聪明地址榜",
-        "hotToken": "热门币种",
-        "newToken": "最新币种",
-        "gainerList": "涨幅榜",
-        "loserList": "跌幅榜",
-        "24HTradingVolume": "24H交易量",
-        "address": "地址",
-        "income": "收益",
-        "amount": "金额",
-        "winningRate": "胜率",
-        "24HIncome": "24H收益",
-        "earningsWeek": "本周收益",
-        "earningsMonth": "本月收益",
-        "operate": "操作",
-        "trackingNotification": "跟踪通知",
-        "share":"分享"
-    },
-    "header": {
-        "hot": "热搜",
-        "searchHistory": "搜索记录",
-        "hotSearch": "热门搜索",
-        "currencyName": "币种名称",
-        "price": "价格",
-        "24HIncreaseDecrease": "24H涨跌幅",
-        "24HTradingVolume": "24H交易量",
-        "safetyRating": "安全评分"
-    },
-    "login": {
-        "selectWallet": "选择钱包登录",
-        "emailLogin": "邮箱登录",
-        "EMail": "电子邮箱",
-        "emailRegister": "邮箱注册",
-        "email": "邮箱",
-        "password": "密码",
-        "forgetPassword": "忘记密码",
-        "quickRegistration": "快速注册",
-        "Confirm Password": "确认密码",
-        "emailVerificationCode": "邮箱验证码",
-        "invitationCode": "邀请码（选填）",
-        "alreadyAccount": "已有账号<span>去登录</span>",
-        "googleCode": "Google验证码"
-    },
-    "myRebate": {
-        "myPositions": "我的持仓",
-        "transactionConfiguration": "交易配置",
-        "walletManagement": "钱包管理",
-        "myRebate": "我的返佣",
-        "securityCenter": "安全中心",
-        "invitationLink": "邀请链接",
-        "myRebateRatio": "我的返佣比列",
-        "friendRebateRatio": "好友返佣比列",
-        "myInvitationCode": "我的邀请码",
-        "dataOverview": "数据总览",
-        "rebateAmount": "返佣金额",
-        "amountTransaction": "交易金额",
-        "numberFriends": "好友人数",
-        "totalTransactions": "总交易人数",
-        "walletAddress": "钱包地址",
-        "joiningDate": "加入日期",
-        "depositAmount": "入金量",
-        "transactionMonth": "当月交易额",
-        "accumulatedRebate": "累计返佣",
-        "invitationCode": "邀请码",
-        "shareQRCode": "分享二维码"
-    },
-    "securityCenter": {
-        "title": "安全中心",
-        "bindGoogle": "绑定谷歌验证码",
-        "notBound": "未绑定",
-        "bindEmail": "绑定邮箱",
-        "change Password": "修改密码",
-        "thePlatform": "登录平台时使用",
-        "bound": "已绑定",
-        "mail": "邮箱",
-        "verificationCode": "验证码",
-        "getVerificationCode": "获取验证码",
-        "oldPassword": "原密码",
-        "newPassword": "新密码",
-        "confirmNewPasswordAgain": "再次确认新密码"
-    },
-    "wallet": {
-        "assets": "资产",
-        "balance": "余额",
-        "value": "价值",
-        "availableBalance": "可用余额",
-        "exportPrivateKey": "导出私钥",
-        "tips1": "助记词提供 对您的钱包和资金的完整访问权限。",
-        "tips2": "MetaMask是非托管钱包。这意味着您是自己的SRP的所有者。",
-        "tips3": "确保没有人在看您的屏幕。MetaMask支持团队绝对不会要求提供此项信息。",
-        "tips4": "保护您的助记词安全",
-        "tips5": "您的助记词提供对您的钱包和资金的完整访问。",
-        "tips6": "请勿与任何人分享此信息。MetaMask支持团队不会要求提供此信息，<span class='tips'>但网络钓鱼者可能会</span>",
-        "tips7": "助记词提供 对您的钱包和资金的完整访问权",
-        "tips8": "MetaMask是非托管钱包。这意味着您是自己的SRP的所有者",
-        "tips9": "确保没有人在看您的屏幕。MetaMask支持团队绝对不会要求提供此项信息"
-    },
-    "position": {
-        "1hour": "1小时",
-        "1day": "1天",
-        "1week": "1周",
-        "1month": "1个月",
-        "1year": "1年",
-        "maximum": "最大",
-        "transactionHistory": "最大",
-        "more": "最大",
-        "currentPosition": "当前持仓",
-        "earnings history": "收益历史",
-        "currency": "币种",
-        "buyCap": "买入市值(USDT)",
-        "currentCap": "当前市值(USDT)",
-        "totalBuy": "总买入(ETH)",
-        "totalSold": "总卖出(ETH)",
-        "income": "收益",
-        "rateReturn": "收益率",
-        "operate": "操作",
-        "trackingNotification": "跟踪通知"
-    },
-    "tradeConfig": {
-        "index": "序号",
-        "address": "地址",
-        "chosen": "已选择<span>1</span>,共计收益<span>403</span>",
-        "tradeDetail": "交易明细",
-        "buyingCost": "买入成本",
-        "currentPrice": "现价",
-        "income": "收益"
-    },
-    "tradeHistory": {
-        "Transaction history": "交易历史",
-        "filter": "筛选",
-        "Buy": "买入",
-        "sell": "卖出",
-        "send": "发送",
-        "accept": "接受",
-        "cost": "费用",
-        "transaction hash": "交易哈希",
-        "form": "到",
-        "to": "从"
-    },
-    "trade": {
-        "onChainTransactions": "DEXX - 链上交易终端",
-        "transactionsValue": "让交易更有价值·让交易极致便捷",
-        "url": "www.dexx.ai",
-        "scanQR": "扫码跟踪交易",
-        "address": "地址",
-        "pool": "池子",
-        "lp": "LP锁仓",
-        "24HVolume": "24H交易额",
-        "holder": "持有人",
-        "circulationValue": "流通市值",
-        "24HNumber": "24H交易数",
-        "circulatingSupply": "流通供应量",
-        "purchaseTax": "买入税",
-        "salesTax": "卖出税",
-        "yourWallet": "你的钱包",
-        "quickBuySell": "快捷买卖",
-        "priceLimit": "限价",
-        "buy": "买入",
-        "sell": "卖出",
-        "currentPrice": "当前价格",
-        "price": "价格",
-        "limitOrder": "限价委托",
-        "availableBalance": "可用余额",
-        "amount": "金额",
-        "quantity": "数量",
-        "antiSwitch": "防夹开关",
-        "dexxScore":"DEXX分数",
-        "reliable":"项目的可靠性得分基于:",
-        "transactionDetection":"交易检测",
-        "contractAuthority":"合约权限已被丢弃",
-        "1":"这似乎不是一个蜜罐",
-        "2":"可以暂停交易的功能",
-        "3":"可以修改交易费率",
-        "4":"不存在黑名单机制",
-        "5":"可以全部出售",
-        "6":"可以全部出售",
-        "7":"合约源代码已验证",
-        "8":"没有代理",
-        "9":"不存在外部合约调用风险",
-        "10":"有增发功能",
-        "11":"合约拥有者无法改变用户余额",
-        "transactionHistory":"交易历史",
-        "currentOrder":"当前委托",
-        "historicalCommission":"历史委托",
-        "myTransaction":"我的交易",
-        "currentHoldings":"当前币种持仓：",
-        "currentValue":"当前价值",
-        "rateReturn":"收益率",
-        "share":"分享",
-        "chosen":"已选择<span>1</span>项，预估卖出可得<span>404</span>"
-    },
-    "test": {
-        "test1": "已选择 <span  class='total'>{total}</span>项，预估卖出可得<span class='total'>{amount}</span>"
     }
-
 }

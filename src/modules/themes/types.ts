@@ -16,6 +16,6 @@ declare module '@material-ui/core/styles/createBreakpoints' {
   }
 }
 
-export const CurrentTheme = process.env.REACT_APP_BASE_ENV_BRANCH === 'DEXX' ? Themes.dark : Themes.light;
+export const CurrentTheme = process.env.REACT_APP_BASE_ENV_BRANCH === 'xxxx' ? Themes.dark : Themes.light;
 
 

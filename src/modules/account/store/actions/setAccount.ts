@@ -72,7 +72,7 @@ export const setAccount = createSmartAction(
 
 
             const timestamp = parseInt(new Date().getTime().toString().slice(0, 10));
-            const SIGN_STR = `Hi! Welcome to Dexx. Please sign the message to let us know that you own the wallet. Signing is gas-less and will not give Dexx permission to conduct any transactions with your wallet. Timestamp is ${timestamp}.`;
+            const SIGN_STR = `Hi! Welcome to xxxx. Please sign the message to let us know that you own the wallet. Signing is gas-less and will not give Dexx permission to conduct any transactions with your wallet. Timestamp is ${timestamp}.`;
             const signature = await web3.eth.personal.sign(
               SIGN_STR,
               address,
